@@ -1,0 +1,23 @@
+export("add.edge", "add.node", "check.compiled", "compile.gRaven", 
+       "clone.domain", "compress", "delete.edge",
+       "delete.node", "get.nodes", "get.belief", "get.finding",
+       "get.normalization.constant", "get.parents", "get.table",
+       "get.states", "get.children", "get.edges", "get.marginal",
+       "hugin.domain", "initialize.domain", "list.domains", 
+       "map.configurations", "print.gRaven",
+       "print.gRaven", "propagate.gRaven", "retract",
+       "set.finding", "set.table", "simulate.gRaven", "summary.gRaven")
+
+S3method(print,gRaven)
+S3method(propagate,gRaven)
+S3method(compile,gRaven)
+S3method(triangulate,gRaven)
+S3method(simulate,gRaven)
+S3method(summary,gRaven)
+S3method(print,summary.gRaven)
+
+importFrom(methods,is)
+importFrom(stats,simulate,ftable)
+importFrom(rlang,env,env_clone)
+importFrom(gRbase,propagate,compile,triangulate)
+import(gRain)
